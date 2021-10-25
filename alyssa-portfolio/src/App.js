@@ -1,6 +1,12 @@
 import React from 'react';
-import PortfolioContainer from './components/PortfolioContainer';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from "./components/Navbar"
 
-const App = () => <PortfolioContainer />;
+function App() {
+    return (
+        <Navbar />
+    );
+}
 
 export default App;
