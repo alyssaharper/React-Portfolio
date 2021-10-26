@@ -13,7 +13,6 @@ import Typed from "react-typed";
                     backSpeed={60}
                     loop
                 />
-                <a href="#" className="main-offer"></a>
             </div>
         </div>
     )
