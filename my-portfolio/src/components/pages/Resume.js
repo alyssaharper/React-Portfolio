@@ -3,8 +3,8 @@ import React from 'react';
 export default function Resume() {
   return (
     <div>
-      <h1>Resume</h1>
-      <h5>Download my <span>Resume</span></h5>
+      <h2>Resume</h2>
+      <h5>Download my <span><a href="../../../assets/Alyssa_Harper_Resume_2021.pages" target="_blank">Resume</a></span></h5>
       <h5>Front-end Proficiencies</h5>
         <li>React</li>
         <li>Javascript</li>
