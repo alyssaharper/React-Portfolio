@@ -1,54 +1,105 @@
-import React from 'react';
+import React, { useState } from "react";
+import { validateEmail } from "../../utils/helpers";
+import "./style.css";
 
 export default function Contact() {
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'firstName') {
+      setFirstName(inputValue);
+    } else if (inputType === 'lastName') {
+      setLastName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+  
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <div>
-      <h1>Contact</h1>
-      <form>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationServer01">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" required/>
-      <div class="invalid-feedback">
-        Please enter your first name.
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationServer02">Last name</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" required/>
-      <div class="invalid-feedback">
-        Please enter your last name.
-      </div>
-    </div>
-    <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-    </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
+      <h2>Contact Me</h2>
+      <form className="form">
+      <h6>First Name:</h6>
+        <input
+          value={firstName}
+          name="firstName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="John"
+          className="firstName"
+        />
+        <br></br>
+        <h6>Last Name:</h6>
+        <input
+          value={lastName}
+          name="lastName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Smith"
+          className="lastName"
+        />
+        <br></br>
+        <h6>Email:</h6>
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="john.smith@gmail.com"
+          className="email"
+        />
+        <br></br>
+        <h6>Message:</h6>
+        <input
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="message"
+          className="message"
+        />
+        <br></br>
+        <button className="btn" type="button" onClick={handleFormSubmit}>Submit</button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
-
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();

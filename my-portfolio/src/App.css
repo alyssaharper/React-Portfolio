@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+html, body, #root {
+  height: 100%;
+}
+
+
 body {
   font-family: "Roboto Condensed" , sans-serif;
 }
+
 
 
 .header-wrapper {
@@ -79,3 +85,11 @@ body {
     2px -1px 0 #000,
     -2px -1px 0 #000;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+

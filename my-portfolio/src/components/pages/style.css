@@ -1,0 +1,12 @@
+.form {
+    margin-left: 10px;
+  }
+
+input {
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #30D5C8;
+  font-weight: bold;
+}
