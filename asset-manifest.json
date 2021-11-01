@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.0c9cff6b.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.788bb6d2.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.788bb6d2.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.a1c8f425.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.a1c8f425.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/React-Portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.9d91cb99.chunk.js": "/React-Portfolio/static/js/2.9d91cb99.chunk.js",
+    "static/js/2.9d91cb99.chunk.js.map": "/React-Portfolio/static/js/2.9d91cb99.chunk.js.map",
+    "static/js/3.15bc73c0.chunk.js": "/React-Portfolio/static/js/3.15bc73c0.chunk.js",
+    "static/js/3.15bc73c0.chunk.js.map": "/React-Portfolio/static/js/3.15bc73c0.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/React-Portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.0c9cff6b.chunk.css.map": "/React-Portfolio/static/css/main.0c9cff6b.chunk.css.map",
+    "static/js/2.9d91cb99.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.9d91cb99.chunk.js.LICENSE.txt",
+    "static/media/Alyssa_Harper_Resume_2021.0543bf49.pages": "/React-Portfolio/static/media/Alyssa_Harper_Resume_2021.0543bf49.pages",
+    "static/media/DayPlanner.ee81d9ec.png": "/React-Portfolio/static/media/DayPlanner.ee81d9ec.png",
+    "static/media/Marvel_Cocktail_Project.471ec18e.png": "/React-Portfolio/static/media/Marvel_Cocktail_Project.471ec18e.png",
+    "static/media/Weather_Dashboard.0d1eab67.png": "/React-Portfolio/static/media/Weather_Dashboard.0d1eab67.png",
+    "static/media/alyssa_logo2.203a0ab8.png": "/React-Portfolio/static/media/alyssa_logo2.203a0ab8.png",
+    "static/media/eatweighfit.d0b33243.png": "/React-Portfolio/static/media/eatweighfit.d0b33243.png",
+    "static/media/App.css": "/React-Portfolio/static/media/laptop_and_wall_background.6bc04afa.jpg",
+    "static/media/profilePic.055946b7.jpg": "/React-Portfolio/static/media/profilePic.055946b7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1c8f425.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.9d91cb99.chunk.js",
+    "static/css/main.0c9cff6b.chunk.css",
+    "static/js/main.788bb6d2.chunk.js"
+  ]
+}
