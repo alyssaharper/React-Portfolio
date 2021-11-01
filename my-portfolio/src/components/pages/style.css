@@ -10,3 +10,70 @@ input {
   background-color: #30D5C8;
   font-weight: bold;
 }
+
+.columns {
+  display: flex;
+  border-top: solid #554C55 5px;
+}
+
+.work {
+  color: #554C55;
+  font-size: 250%;
+  border-right: solid #554C55 8px;
+  text-align: right;
+  word-wrap:normal;
+  padding:60px 8px 50px 8px;
+  margin: 10px;
+}
+
+.work {
+  padding:60px 8px 1000px 8px;
+}
+
+.myWork .workbig {
+  flex: 1;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+}
+
+.workbig {
+  border-style: solid;
+  border-width: 5px;
+  margin: 20px 20px 20px 0px;
+}
+
+.workbig img {
+  width: 100%;
+}
+
+.myWork .worksmall {
+  flex: 4;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+}
+
+.worksmall {
+  border-style: solid;
+  border-width: 5px;
+  margin: 20px 20px 20px 0px;
+}
+
+.worksmall img {
+  width: 100%;
+}
+
+.workinfo {
+  position: absolute;
+  background-color: #554C55;
+  color: #30D5C8;
+  height: 55px;
+  width: 280px;
+  bottom: 10px;
+  left: 10px;
+}
